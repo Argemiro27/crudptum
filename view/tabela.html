@@ -1,0 +1,31 @@
+<table border="1">
+  <thead>
+    <tr>
+      <th>Evento</th>
+      <th>Local</th>
+      <th>Quantidade</th>
+      <th>Editar</th>
+      <th>Remover</th>
+    </tr>
+  </thead>
+  <tbody>
+    {linha}
+    <tr>
+      <td>{nome}</td>
+      <td>{local}</td>
+      <td>{quantidade}</td>
+      <td>
+        <button type="button">Editar</button>
+      </td>
+      <td>
+        <button
+          type="button"
+          onclick="if(confirm('Deseja remover este registro?'))window.location.href='?acao=Tabela&metodo=remover&id={id}';"
+        >
+          Remover
+        </button>
+      </td>
+    </tr>
+    {/linha}
+  </tbody>
+</table>
