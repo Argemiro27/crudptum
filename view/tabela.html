@@ -15,7 +15,12 @@
       <td>{local}</td>
       <td>{quantidade}</td>
       <td>
-        <button type="button">Editar</button>
+        <button 
+          type="button" class="btn btn-primary"
+          onclick="window.location.href='?acao=Tabela&metodo=editar&id={id}'"
+        >
+          Editar
+        </button>
       </td>
       <td>
         <button
